@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="0f741e6a-54ea-43e3-b2ba-c59f55c3cf40" name="MapSuite" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="0f741e6a-54ea-43e3-b2ba-c59f55c3cf40fileName">MapSuite</con:setting>
+  </con:settings>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testSuite>
