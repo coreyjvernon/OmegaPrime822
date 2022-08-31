@@ -64,7 +64,7 @@
   <con:testStep type="datasourceloop" name="Data Source Loop" id="2793a43c-2189-4889-96a0-487fb0a71de3">
     <con:settings/>
     <con:config>
-      <dataSourceStep>External</dataSourceStep>
+      <dataSourceStep>DataSource1</dataSourceStep>
       <targetStep>Request 1</targetStep>
       <discardResults>false</discardResults>
     </con:config>
