@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="Json" path="/maps/api/geocode/json" id="8fe48451-a0f0-4390-9d5e-53dd6ac660c8" xmlns:con="http://eviware.com/soapui/config">
+<con:resource name="Json" path="/maps/api/geocode/json" id="8fe48451-a0f0-4390-9d5e-53dd6ac660c8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="8fe48451-a0f0-4390-9d5e-53dd6ac660c8fileName">Json</con:setting>
   </con:settings>
@@ -12,16 +12,16 @@
         <con:value>Boston</con:value>
         <con:style>QUERY</con:style>
         <con:default>Boston</con:default>
-        <con:path xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-        <con:description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
       </con:parameter>
       <con:parameter required="true">
         <con:name>key</con:name>
         <con:value>AIzaSyCaDvq9XtyA6p5df4lsr7xkwSCydm5Xom0</con:value>
         <con:style>QUERY</con:style>
         <con:default>AIzaSyCaDvq9XtyA6p5df4lsr7xkwSCydm5Xom0</con:default>
-        <con:path xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-        <con:description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
       </con:parameter>
     </con:parameters>
     <con:representation type="RESPONSE">
@@ -33,6 +33,10 @@
     <con:request name="Request 1" id="3c29d6b3-d0ac-44a6-81e7-90691925f5df" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://maps.googleapis.com</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters>
         <con:entry key="address" value="Boston"/>
         <con:entry key="key" value="AIzaSyCaDvq9XtyA6p5df4lsr7xkwSCydm5Xom0"/>

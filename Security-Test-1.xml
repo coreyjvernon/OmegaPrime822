@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:securityTest id="0f93b29e-3dd2-41a5-afdb-8ec5799d306b" testCaseId="42c142ee-56e1-419c-8316-b43a73809b28" name="Security Test 1" failSecurityTestOnScanErrors="true" xmlns:con="http://eviware.com/soapui/config">
+<con:securityTest id="cd99e066-153f-4e8f-9c48-bb664340bb92" testCaseId="42c142ee-56e1-419c-8316-b43a73809b28" name="Security Test 1" failSecurityTestOnScanErrors="true" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
-    <con:setting id="0f93b29e-3dd2-41a5-afdb-8ec5799d306bfileName">Security-Test-1</con:setting>
+    <con:setting id="cd99e066-153f-4e8f-9c48-bb664340bb92fileName">Security-Test-1</con:setting>
   </con:settings>
   <con:testStepSecurityTest>
     <con:testStepId>b7eefca1-1bf4-476a-b0b4-af99d30dac03</con:testStepId>
-    <con:testStepSecurityScan type="GroovySecurityScan" name="Custom Script" id="051452af-f01c-4d4f-b3cb-f97c38685a6e" applyForFailedStep="false" disabled="false">
+    <con:testStepSecurityScan type="GroovySecurityScan" name="Custom Script" id="395bd99f-88ec-463f-ad9c-c49f31b62259" applyForFailedStep="false" disabled="false">
       <con:settings/>
       <con:config xsi:type="con:GroovySecurityScan" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <con:executeScript/>
@@ -23,7 +23,7 @@
   </con:testStepSecurityTest>
   <con:testStepSecurityTest>
     <con:testStepId>e9ec2acb-a708-4c76-b732-5947f877b8f1</con:testStepId>
-    <con:testStepSecurityScan type="BoundaryScan" name="Boundary Scan" id="cba17aeb-90a3-4eb1-9dcb-dcc13e541f43" applyForFailedStep="false" disabled="false">
+    <con:testStepSecurityScan type="BoundaryScan" name="Boundary Scan" id="caca4690-4a0f-4fb2-8cf3-24afdd0573e8" applyForFailedStep="false" disabled="false">
       <con:settings/>
       <con:config xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
       <con:assertion type="Sensitive Information Exposure" id="f30bd6e8-3f36-40de-8f01-0020d0a86bbc" name="Sensitive Information Exposure">
@@ -38,7 +38,7 @@
         <con:delay>100</con:delay>
       </con:executionStrategy>
     </con:testStepSecurityScan>
-    <con:testStepSecurityScan type="CrossSiteScriptingScan" name="Cross Site Scripting" id="0646d76f-b629-4799-b7e6-3d1ef4bd74b7" applyForFailedStep="false" disabled="false">
+    <con:testStepSecurityScan type="CrossSiteScriptingScan" name="Cross Site Scripting" id="e2b79b93-8fe6-4541-acd3-2b729e350975" applyForFailedStep="false" disabled="false">
       <con:settings/>
       <con:config xsi:type="con:CrossSiteScriptingScan" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <con:parameterExposureStrings>&lt;PLAINTEXT></con:parameterExposureStrings>
@@ -149,7 +149,7 @@
         <con:delay>100</con:delay>
       </con:executionStrategy>
     </con:testStepSecurityScan>
-    <con:testStepSecurityScan type="FuzzingScan" name="Fuzzing Scan" id="5920c1a6-dd06-48e7-a5c6-3f5d947a283d" applyForFailedStep="false" disabled="false">
+    <con:testStepSecurityScan type="FuzzingScan" name="Fuzzing Scan" id="0989e8da-2dcf-4be4-a95b-a95ee99f4c30" applyForFailedStep="false" disabled="false">
       <con:settings/>
       <con:config xsi:type="con:FuzzerScan" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <con:minimal>5</con:minimal>
@@ -168,7 +168,7 @@
         <con:delay>100</con:delay>
       </con:executionStrategy>
     </con:testStepSecurityScan>
-    <con:testStepSecurityScan type="InvalidTypesSecurityScan" name="Invalid Types" id="c00c6ce9-aa3d-48b0-b724-db098882333f" applyForFailedStep="false" disabled="false">
+    <con:testStepSecurityScan type="InvalidTypesSecurityScan" name="Invalid Types" id="7e5bf2c8-f178-4127-8a40-a2a61234d884" applyForFailedStep="false" disabled="false">
       <con:settings/>
       <con:config xsi:type="con:InvalidSecurityScan" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <con:typesList>
@@ -285,7 +285,7 @@
         <con:delay>100</con:delay>
       </con:executionStrategy>
     </con:testStepSecurityScan>
-    <con:testStepSecurityScan type="SQLInjectionScan" name="SQL Injection" id="49bb3a80-389d-4400-bc11-02e26fb320ae" applyForFailedStep="false" disabled="false">
+    <con:testStepSecurityScan type="SQLInjectionScan" name="SQL Injection" id="ad12413e-358d-4ec8-9365-4dcffc82847a" applyForFailedStep="false" disabled="false">
       <con:settings/>
       <con:config xsi:type="con:SQLInjectionScan" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <con:sqlInjectionStrings>'-'</con:sqlInjectionStrings>
@@ -1114,7 +1114,7 @@
         <con:delay>100</con:delay>
       </con:executionStrategy>
     </con:testStepSecurityScan>
-    <con:testStepSecurityScan type="XPathInjectionSecurityScan" name="XPath Injection" id="ae413d8f-8bf9-43bf-bfa6-97269becd8f9" applyForFailedStep="false" disabled="false">
+    <con:testStepSecurityScan type="XPathInjectionSecurityScan" name="XPath Injection" id="7ed21032-45b3-435a-a745-0ed1f28b6d2d" applyForFailedStep="false" disabled="false">
       <con:settings/>
       <con:config xsi:type="con:XPathInjection" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <con:xpathList>or name(//users/LoginID[1]) = 'LoginID' or 'a'='b</con:xpathList>
@@ -1140,7 +1140,7 @@
         <con:delay>100</con:delay>
       </con:executionStrategy>
     </con:testStepSecurityScan>
-    <con:testStepSecurityScan type="GroovySecurityScan" name="Custom Script" id="4abfe8d0-0272-41d0-a966-28998834e301" applyForFailedStep="false" disabled="false">
+    <con:testStepSecurityScan type="GroovySecurityScan" name="Custom Script" id="afc99a45-bcb2-4079-aa46-d4a38b8e3018" applyForFailedStep="false" disabled="false">
       <con:settings/>
       <con:config xsi:type="con:GroovySecurityScan" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <con:executeScript/>
@@ -1157,7 +1157,7 @@
         <con:delay>100</con:delay>
       </con:executionStrategy>
     </con:testStepSecurityScan>
-    <con:testStepSecurityProScan type="HttpMethodFuzzingScan" name="HTTP Method Fuzzing" id="1970ed80-74a5-4d68-8850-9df7b860ea50" applyForFailedStep="false" disabled="false">
+    <con:testStepSecurityProScan type="HttpMethodFuzzingScan" name="HTTP Method Fuzzing" id="f27fdd7b-341e-46b3-8282-dde00918391e" applyForFailedStep="false" disabled="false">
       <con:settings/>
       <con:config xsi:type="con:HttpMethodFuzzingScan" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <con:deselectedMethods/>
@@ -1180,7 +1180,7 @@
         <con:delay>100</con:delay>
       </con:executionStrategy>
     </con:testStepSecurityProScan>
-    <con:testStepSecurityProScan type="SensitiveFileSecurityScan" name="Sensitive Files Exposure" id="f7f92cde-3d21-44ee-bd9c-e87570578fd5" applyForFailedStep="false" disabled="false">
+    <con:testStepSecurityProScan type="SensitiveFileSecurityScan" name="Sensitive Files Exposure" id="ca4dd4f0-706b-4dba-b795-c5197f7681bb" applyForFailedStep="false" disabled="false">
       <con:settings/>
       <con:config xsi:type="con:SensitiveFileSecurityScan" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <con:sensitiveFile description="Sensitive SSH information" fileName="/.ssh/known_hosts"/>
@@ -1241,7 +1241,7 @@
         <con:delay>100</con:delay>
       </con:executionStrategy>
     </con:testStepSecurityProScan>
-    <con:testStepSecurityProScan type="WeakAuthenticationScan" name="Weak Authentication" id="b945c6d4-cb44-4251-9d3b-6779dd6a5fa3" applyForFailedStep="false" disabled="false">
+    <con:testStepSecurityProScan type="WeakAuthenticationScan" name="Weak Authentication" id="18e3cb2a-f228-450a-8d72-79c129c77a67" applyForFailedStep="false" disabled="false">
       <con:settings/>
       <con:config xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
       <con:assertion type="WeakPassword" id="47743827-dc53-4a28-93aa-e85b39524cb8" name="Weak Password Detection">
@@ -1258,7 +1258,7 @@
   </con:testStepSecurityTest>
   <con:testStepSecurityTest>
     <con:testStepId>49a48942-5480-4f05-b041-2b26843786b4</con:testStepId>
-    <con:testStepSecurityScan type="GroovySecurityScan" name="Custom Script" id="fd98541c-526f-4638-9203-5b27a6f46ca1" applyForFailedStep="false" disabled="false">
+    <con:testStepSecurityScan type="GroovySecurityScan" name="Custom Script" id="6213e6d9-da1c-4a3d-a424-6ccdecf20a29" applyForFailedStep="false" disabled="false">
       <con:settings/>
       <con:config xsi:type="con:GroovySecurityScan" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
         <con:executeScript/>
